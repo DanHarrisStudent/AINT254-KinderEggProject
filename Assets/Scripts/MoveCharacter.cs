@@ -56,7 +56,12 @@ namespace ISS
         void FixedUpdate()
         {
             Debug.Log("Fixed Update: " + m_rotSpeed * Input.GetAxis("Horizontal"));
-            m_rigidbody.AddTorque(new Vector3(0.0f, m_rotSpeed * Input.GetAxis("Horizontal"), 0.0f));
+
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+            {
+                m_rigidbody.AddTorque(new Vector3(0.0f, m_rotSpeed * Input.GetAxis("Horizontal"), 0.0f));
+
+            }
             m_rigidbody.AddForce(m_transform.forward * m_speed * Input.GetAxis("Vertical"));
         }
     }
