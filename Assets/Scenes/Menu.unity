@@ -123,7 +123,11 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 0
+=======
+  m_IsActive: 1
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
 --- !u!224 &602121
 RectTransform:
   m_ObjectHideFlags: 0
@@ -494,6 +498,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 518344497}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls:
       - m_Target: {fileID: 602120}
         m_MethodName: SetActive
@@ -517,6 +522,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+=======
+      m_Calls: []
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &518344497
@@ -541,7 +549,11 @@ MonoBehaviour:
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
+<<<<<<< HEAD
   m_FillCenter: 0
+=======
+  m_FillCenter: 1
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
@@ -566,7 +578,11 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 1
+=======
+  m_IsActive: 0
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
 --- !u!224 &610486979
 RectTransform:
   m_ObjectHideFlags: 0
@@ -664,6 +680,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 794045505}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls:
       - m_Target: {fileID: 610486978}
         m_MethodName: SetActive
@@ -687,6 +704,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+=======
+      m_Calls: []
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &794045505
@@ -1076,11 +1096,19 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
+<<<<<<< HEAD
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 1
+=======
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1230,11 +1258,19 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
+<<<<<<< HEAD
   m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
+=======
+  m_havePropertiesChanged: 1
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 1
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1285,7 +1321,11 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
+<<<<<<< HEAD
   m_AnchorMax: {x: 0, y: 0}
+=======
+  m_AnchorMax: {x: 0, y: 1}
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1454,11 +1494,19 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
+<<<<<<< HEAD
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 1
+=======
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1608,11 +1656,19 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
+<<<<<<< HEAD
   m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
+=======
+  m_havePropertiesChanged: 1
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 1
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1762,11 +1818,19 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
+<<<<<<< HEAD
   m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 1
+=======
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1950,6 +2014,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1759865456}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls:
       - m_Target: {fileID: 602122}
         m_MethodName: QuitGame
@@ -1962,6 +2027,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+=======
+      m_Calls: []
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1759865456
@@ -2175,7 +2243,11 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
+<<<<<<< HEAD
   m_AnchorMax: {x: 0, y: 0}
+=======
+  m_AnchorMax: {x: 0, y: 1}
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2344,11 +2416,19 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
+<<<<<<< HEAD
   m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
+=======
+  m_havePropertiesChanged: 1
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 1
+>>>>>>> 28b0f7f157a47bced5a6a34055e35eda370428d1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
