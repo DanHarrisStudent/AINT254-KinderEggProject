@@ -1,24 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Finish : MonoBehaviour {
 
-    public GameObject _trigger;
-    public GameObject _menu;
 
+    //When player hits trigger, send player to Finish Scene.
     private void OnTriggerEnter(Collider other)
     {
-        _menu.SetActive(true);
-
-        Destroy(_trigger);
+        //Activate next scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    private void OpenMenu()
-    {
-        if (Input.GetButtonDown("Start"))
-        {
-            _menu.SetActive(true);
-        }
-    }
-
 }
