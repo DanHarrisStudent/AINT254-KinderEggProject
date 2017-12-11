@@ -68,6 +68,7 @@ namespace ISS
             //Checking if the players tires are on the gound
             if (Physics.Raycast(groundRay, out hit, m_rayDistance))
             {
+                Debug.Log("Ray Hitting Ground");
                 //If the player is moving forward greater than 0.7
                 if (m_rigidbody.velocity.magnitude > 0.7f)
                 {
