@@ -6,7 +6,6 @@ namespace ISS
     public class MoveCharacter : MonoBehaviour
 
     {
-
         public Vector3 com = Vector3.zero;
         public LayerMask groundLayer;
         public Camera camera;
@@ -33,14 +32,6 @@ namespace ISS
         [SerializeField]
         private float m_rayDistance = 2.0f;
 
-        private bool CameraAnimation = false;
-
-        public void SetCameraAnimation(bool _CameraAnimation)
-        {
-            CameraAnimation = _CameraAnimation;
-        }
-
-
         // Use this for initialization
         void Start()
         {
@@ -53,20 +44,19 @@ namespace ISS
         // Update is called once per frame
         void LateUpdate()
         {
-            if (CameraAnimation == true)
-            {
-                Vector3 currenCamPos = camera.transform.position;
+            Vector3 currenCamPos = camera.transform.position;
 
-                Quaternion currenCamRot = camera.transform.rotation;
+            Quaternion currenCamRot = camera.transform.rotation;
 
-                float angle = gameObject.transform.rotation.eulerAngles.y;
+            float angle = gameObject.transform.rotation.eulerAngles.y;
 
-                camera.transform.rotation = Quaternion.Lerp(currenCamRot, Quaternion.Euler(new Vector3(angleX, angle, 0.0f)), 0.1f);
+            camera.transform.rotation = Quaternion.Lerp(currenCamRot, Quaternion.Euler(new Vector3(angleX, angle, 0.0f)), 0.1f);
 
-                Vector3 newCamPos = transform.position + new Vector3(-cameraDistance * Mathf.Sin(angle * Mathf.Deg2Rad), camerHight, -cameraDistance * Mathf.Cos(angle * Mathf.Deg2Rad));
+            Vector3 newCamPos = transform.position + new Vector3(-cameraDistance * Mathf.Sin(angle * Mathf.Deg2Rad), camerHight, -cameraDistance * Mathf.Cos(angle * Mathf.Deg2Rad));
 
-                camera.transform.position = Vector3.Lerp(currenCamPos, newCamPos, 0.1f);
-            }
+            camera.transform.position = Vector3.Lerp(currenCamPos, newCamPos, 0.1f);
+
+
         }
 
         void FixedUpdate()
@@ -78,6 +68,7 @@ namespace ISS
             //Checking if the players tires are on the gound
             if (Physics.Raycast(groundRay, out hit, m_rayDistance))
             {
+                Debug.Log("Ray Hitting Ground");
                 //If the player is moving forward greater than 0.7
                 if (m_rigidbody.velocity.magnitude > 0.7f)
                 {
