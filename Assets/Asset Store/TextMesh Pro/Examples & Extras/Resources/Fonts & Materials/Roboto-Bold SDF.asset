@@ -16,7 +16,19 @@ Material:
     serializedVersion: 2
     m_TexEnvs:
     - first:
-        name: <noninit>
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Cube
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _FaceTex
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -24,22 +36,73 @@ Material:
     - first:
         name: _MainTex
       second:
+        m_Texture: {fileID: 2883032}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _OutlineTex
+      second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
-        name: <noninit>
+        name: _Ambient
+      second: 0.5
+    - first:
+        name: _Bevel
+      second: 0.5
+    - first:
+        name: _BevelClamp
+      second: 0
+    - first:
+        name: _BevelOffset
+      second: 0
+    - first:
+        name: _BevelRoundness
+      second: 0
+    - first:
+        name: _BevelWidth
+      second: 0
+    - first:
+        name: _BumpFace
+      second: 0
+    - first:
+        name: _BumpOutline
       second: 0
     - first:
         name: _ColorMask
       second: 15
     - first:
+        name: _Diffuse
+      second: 0.5
+    - first:
         name: _FaceDilate
       second: 0
     - first:
+        name: _FaceUVSpeedX
+      second: 0
+    - first:
+        name: _FaceUVSpeedY
+      second: 0
+    - first:
+        name: _GlowInner
+      second: 0.05
+    - first:
+        name: _GlowOffset
+      second: 0
+    - first:
+        name: _GlowOuter
+      second: 0.05
+    - first:
+        name: _GlowPower
+      second: 0.75
+    - first:
         name: _GradientScale
-      second: 5
+      second: 10
+    - first:
+        name: _LightAngle
+      second: 3.1416
     - first:
         name: _MaskSoftnessX
       second: 0
@@ -50,20 +113,29 @@ Material:
         name: _OutlineSoftness
       second: 0
     - first:
+        name: _OutlineUVSpeedX
+      second: 0
+    - first:
+        name: _OutlineUVSpeedY
+      second: 0
+    - first:
         name: _OutlineWidth
       second: 0
     - first:
         name: _PerspectiveFilter
       second: 0.875
     - first:
+        name: _Reflectivity
+      second: 10
+    - first:
         name: _ScaleRatioA
-      second: 0.8
+      second: 0.9
     - first:
         name: _ScaleRatioB
-      second: 1
+      second: 0.73125
     - first:
         name: _ScaleRatioC
-      second: 0.7
+      second: 0.51064944
     - first:
         name: _ScaleX
       second: 1
@@ -73,6 +145,9 @@ Material:
     - first:
         name: _ShaderFlags
       second: 0
+    - first:
+        name: _SpecularPower
+      second: 2
     - first:
         name: _Stencil
       second: 0
@@ -90,19 +165,19 @@ Material:
       second: 255
     - first:
         name: _TextureHeight
-      second: 512
+      second: 1024
     - first:
         name: _TextureWidth
-      second: 512
+      second: 1024
     - first:
         name: _UnderlayDilate
-      second: 0
+      second: 0.432
     - first:
         name: _UnderlayOffsetX
-      second: 0
+      second: 1
     - first:
         name: _UnderlayOffsetY
-      second: 0
+      second: -1
     - first:
         name: _UnderlaySoftness
       second: 0
@@ -114,23 +189,38 @@ Material:
       second: 0
     - first:
         name: _WeightBold
-      second: 0.5
+      second: 0.75
     - first:
         name: _WeightNormal
       second: 0
     m_Colors:
     - first:
-        name: <noninit>
-      second: {r: 0, g: 1.3313849e-32, b: 0, a: 1.3313755e-32}
-    - first:
         name: _ClipRect
       second: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - first:
+        name: _EnvMatrixRotation
+      second: {r: 0, g: 0, b: 0, a: 0}
     - first:
         name: _FaceColor
       second: {r: 1, g: 1, b: 1, a: 1}
     - first:
+        name: _GlowColor
+      second: {r: 0, g: 1, b: 0, a: 0.5}
+    - first:
+        name: _MaskCoord
+      second: {r: 0, g: 0, b: 32767, a: 32767}
+    - first:
         name: _OutlineColor
       second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _ReflectFaceColor
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _ReflectOutlineColor
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _SpecularColor
+      second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _UnderlayColor
       second: {r: 0, g: 0, b: 0, a: 0.5}
