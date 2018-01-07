@@ -12,7 +12,7 @@ public class PathFollower : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        speed = Random.Range(3, 10);
+        speed = Random.Range(7, 15);
 	}
 	
 	// Update is called once per frame
