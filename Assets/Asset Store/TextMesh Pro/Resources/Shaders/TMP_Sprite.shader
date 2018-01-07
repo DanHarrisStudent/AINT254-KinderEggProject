@@ -80,7 +80,7 @@ Shader "TextMeshPro/Sprite"
 			{
 				v2f OUT;
 				OUT.worldPosition = IN.vertex;
-				OUT.vertex = UnityObjectToClipPos(OUT.worldPosition);
+				OUT.vertex = mul(UNITY_MATRIX_MVP, OUT.worldPosition);
 
 				OUT.texcoord = IN.texcoord;
 				
