@@ -68,13 +68,10 @@ namespace ISS
             //Checking if the players tires are on the gound
             if (Physics.Raycast(groundRay, out hit, m_rayDistance))
             {
-                Debug.Log("Ray Hitting Ground");
                 //If the player is moving forward greater than 0.7
                 if (m_rigidbody.velocity.magnitude > 0.7f)
                 {
                     //Allows the player to turn
-                    //m_rigidbody.AddTorque(new Vector3(0.0f, m_rotSpeed * Input.GetAxis("Horizontal"), 0.0f));
-
                     if (Input.GetKey(KeyCode.S))
                     {
                         m_rigidbody.AddTorque(new Vector3(0.0f, -m_rotSpeed * Input.GetAxis("Horizontal"), 0.0f));
@@ -98,6 +95,15 @@ namespace ISS
                 else
                 {
                     m_rigidbody.AddForce(m_transform.forward * m_speed * Input.GetAxis("Vertical"));
+                }
+
+                //Reversing on the controller
+                if (m_rigidbody.velocity.magnitude < 0f)
+                {
+                    Debug.Log("Reversing");
+
+                    m_rigidbody.AddForce(m_transform.forward * m_speed * Input.GetAxis("Vertical") / 2);
+
                 }
             }
 
