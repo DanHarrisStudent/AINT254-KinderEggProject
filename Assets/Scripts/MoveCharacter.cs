@@ -14,7 +14,7 @@ namespace ISS
         private float m_speed = 5.0f;
 
         [SerializeField]
-        private float m_rotSpeed = 50.0f;
+        private float m_rotSpeed = 40.0f;
 
         [SerializeField]
         private float cameraDistance = 5.0f;
@@ -37,54 +37,88 @@ namespace ISS
         {
             m_transform = transform;
             m_rigidbody = GetComponent<Rigidbody>();
-
+            //Creates a center of mass
             m_rigidbody.centerOfMass = com;
         }
 
         // Update is called once per frame
         void LateUpdate()
         {
+            //Keeps the camera a specific distance away from the car
             Vector3 currenCamPos = camera.transform.position;
-
-            Quaternion currenCamRot = camera.transform.rotation;            
+            Quaternion currenCamRot = camera.transform.rotation;
 
             float angle = gameObject.transform.rotation.eulerAngles.y;
 
             camera.transform.rotation = Quaternion.Lerp(currenCamRot, Quaternion.Euler(new Vector3(angleX, angle, 0.0f)), 0.1f);
-
-            Vector3 newCamPos = transform.position + new Vector3(- cameraDistance * Mathf.Sin(angle*Mathf.Deg2Rad), camerHight, - cameraDistance * Mathf.Cos(angle*Mathf.Deg2Rad));
+            Vector3 newCamPos = transform.position + new Vector3(-cameraDistance * Mathf.Sin(angle * Mathf.Deg2Rad), camerHight, -cameraDistance * Mathf.Cos(angle * Mathf.Deg2Rad));
 
             camera.transform.position = Vector3.Lerp(currenCamPos, newCamPos, 0.1f);
-            
+
 
         }
 
         void FixedUpdate()
         {
-            //Debug.Log("Fixed Update Horizontal: " + m_rotSpeed * Input.GetAxis("Horizontal"));
-            //Debug.Log("Fixed Update Vertical: " + m_speed * Input.GetAxis("Vertical"));
-
+            //Creates a raycast veriable from the car's transform
             RaycastHit hit;
             Ray groundRay = new Ray(m_transform.position, Vector3.down);
 
+            //Checking if the players tires are on the gound
             if (Physics.Raycast(groundRay, out hit, m_rayDistance))
             {
-                //Debug.Log("Any collision");
-                //if (hit.collider.tag == "Ground")
-                //{
-                    //Debug.Log("Hit ground");
-                    // m_player.transform.rotation = Quaternion.Euler(new Vector3(m_,0,0));
-                    if (m_rigidbody.velocity.magnitude > 0.7)
+                //If the player is moving forward greater than 0.7
+                if (m_rigidbody.velocity.magnitude > 0.7f)
+                {
+                    //Player is reversing, rotation in negative
+                    if (Input.GetKey(KeyCode.S))
                     {
-                        Debug.Log("Working here");
-                        m_rigidbody.AddTorque(new Vector3(0.0f, m_rotSpeed * Input.GetAxis("Horizontal"), 0.0f));
+                        m_rigidbody.AddTorque(new Vector3(0.0f, -m_rotSpeed * Input.GetAxis("Horizontal"), 0.0f));
 
                     }
+                    //Player is driving forward, allows user to turn
+                    else
+                    {
+                        m_rigidbody.AddTorque(new Vector3(0.0f, m_rotSpeed * Input.GetAxis("Horizontal"), 0.0f));
+                    }
+
+                    if (m_rigidbody.velocity.magnitude > 20f)
+                    {
+                        m_rigidbody.AddTorque(new Vector3(0.0f, m_rotSpeed * 1.01f * Input.GetAxis("Horizontal"), 0.0f));
+                    }
+
+                }
+
+                //If the player is reversing
+                if (Input.GetKey(KeyCode.S))
+                {
+                    m_rigidbody.AddForce(m_transform.forward * m_speed / 4 * Input.GetAxis("Vertical"));
+
+                }
+                //Player is driving forward
+                else
+                {
                     m_rigidbody.AddForce(m_transform.forward * m_speed * Input.GetAxis("Vertical"));
-                //}
+                }
+
+                //Reversing on the controller
+                if (m_rigidbody.velocity.magnitude < 0f)
+                {
+                    Debug.Log("Reversing");
+
+                    m_rigidbody.AddForce(m_transform.forward * m_speed * Input.GetAxis("Vertical") / 2);
+
+                }
             }
 
-           
+        }
+
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.tag == "NosPickUp")
+            {
+                m_rigidbody.AddForce(m_transform.forward * m_speed * 10);
+            }
         }
     }
 }
