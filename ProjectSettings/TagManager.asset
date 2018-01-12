@@ -5,8 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Player_1
-  - Road
   - Grass
+  - PlayerGoal
+  - NosPickUp
   layers:
   - Default
   - TransparentFX
