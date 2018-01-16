@@ -1,5 +1,10 @@
-// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
+<<<<<<< HEAD
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+=======
+>>>>>>> 97359b049df6587de2ce44db2bc39e5719b36c2a
 void VertShader(inout appdata_full v, out Input data)
 {
 	v.vertex.x += _VertexOffsetX;

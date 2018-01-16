@@ -1,9 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 2128fc78729614841b5ac25cf800e5ab
+=======
+guid: da9da78fe65948544a95b59e206a95d5
+>>>>>>> ff0734d1b3aa84f837421d7d8550edcc720defc6
 timeCreated: 1510064178
 licenseType: Pro
 NativeFormatImporter:
-  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

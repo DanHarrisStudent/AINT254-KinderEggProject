@@ -71,7 +71,11 @@ namespace ISS
                 //If the player is moving forward greater than 0.7
                 if (m_rigidbody.velocity.magnitude > 0.7f)
                 {
+<<<<<<< HEAD
                     //Player is reversing, rotation in negative
+=======
+                    //Allows the player to turn
+>>>>>>> ff0734d1b3aa84f837421d7d8550edcc720defc6
                     if (Input.GetKey(KeyCode.S))
                     {
                         m_rigidbody.AddTorque(new Vector3(0.0f, -m_rotSpeed * Input.GetAxis("Horizontal"), 0.0f));

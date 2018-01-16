@@ -146,11 +146,18 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119782}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
+<<<<<<< HEAD
   m_LocalPosition: {x: 549.2698, y: -0.025831133, z: -360.9125}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 4750517667928294}
   - {fileID: 4639752248270104}
+=======
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children:
+  - {fileID: 4750517667928294}
+>>>>>>> ff0734d1b3aa84f837421d7d8550edcc720defc6
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
@@ -185,7 +192,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2337836
 MeshRenderer:
@@ -220,7 +226,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2370496
 MeshRenderer:
@@ -253,7 +258,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2384026
 MeshRenderer:
@@ -286,7 +290,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2397944
 MeshRenderer:
@@ -319,7 +322,6 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &3300064
 MeshFilter:
@@ -367,6 +369,7 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 119782}
   m_IsPrefabParent: 1
+<<<<<<< HEAD
 --- !u!1 &1461273716237678
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +387,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+=======
+>>>>>>> ff0734d1b3aa84f837421d7d8550edcc720defc6
 --- !u!1 &1475628834760796
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +404,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &4639752248270104
 Transform:
   m_ObjectHideFlags: 1
@@ -412,6 +418,8 @@ Transform:
   m_Father: {fileID: 475822}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -28.546001, z: 0}
+=======
+>>>>>>> ff0734d1b3aa84f837421d7d8550edcc720defc6
 --- !u!4 &4750517667928294
 Transform:
   m_ObjectHideFlags: 1
@@ -448,6 +456,7 @@ AudioSource:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119782}
   m_Enabled: 1
+<<<<<<< HEAD
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8dafeec7c3ff7c64f812cf689b85a0ac, type: 3}
@@ -3835,3 +3844,20 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594c80f2d24d259438a38e1f82937832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  com: {x: 0, y: 0, z: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  camera: {fileID: 0}
+  m_speed: 5
+  m_rotSpeed: 50
+  cameraDistance: 5
+  camerHight: 2
+  angleX: 30
+  m_rayDistance: 2
+>>>>>>> ff0734d1b3aa84f837421d7d8550edcc720defc6

@@ -7,7 +7,10 @@ TagManager:
   - Player_1
   - Grass
   - PlayerGoal
+<<<<<<< HEAD
   - NosPickUp
+=======
+>>>>>>> ff0734d1b3aa84f837421d7d8550edcc720defc6
   layers:
   - Default
   - TransparentFX

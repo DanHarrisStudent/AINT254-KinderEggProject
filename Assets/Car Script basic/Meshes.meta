@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Car Script basic/Meshes.meta
 guid: 7e11ea85c5a2b7643be8dd218b50d9de
 folderAsset: yes
 timeCreated: 1462776452
+=======
+guid: caf341853abb9ea46a5cd3d95bbac971
+folderAsset: yes
+timeCreated: 1506384778
+>>>>>>> ff0734d1b3aa84f837421d7d8550edcc720defc6:Assets/Asset Store/TextMesh Pro/Plugins/Editor DLL.meta
 licenseType: Store
 DefaultImporter:
   userData: 
